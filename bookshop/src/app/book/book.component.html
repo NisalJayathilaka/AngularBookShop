@@ -1,0 +1,9 @@
+<h2>Properties of Book List</h2>
+
+<div>
+  <ul>
+    <ng-container *ngFor="let singleBook of books">
+     <app-bookdetails (bookEvent)="addToCart($event)" [book]="singleBook"></app-bookdetails>
+    </ng-container>
+  </ul>
+</div>
