@@ -1,9 +1,9 @@
 <h2>Properties of Book List</h2>
 
 <div>
-  <ul>
+  <ul class="flex flex-wrap justify-center">
     <ng-container *ngFor="let singleBook of books">
-     <app-bookdetails [book]="singleBook"></app-bookdetails>
+     <app-bookdetails [book]="singleBook" class="w-1/2 p-5 text-center"></app-bookdetails>
     </ng-container>
   </ul>
 </div>

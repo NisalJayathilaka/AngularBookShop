@@ -18,7 +18,7 @@ export class CartService {
     return this.cart;
   }
 
-  remove(){
-  this.cart.pop();
+  remove(book: Book) {
+    this.cart = this.cart.filter((b) => b != book);
   }
 }

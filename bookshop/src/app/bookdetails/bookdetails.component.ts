@@ -21,6 +21,7 @@ export class BookdetailsComponent implements OnInit {
     this.cartService.add(this.book);
   }
   removeFromCart(){
-    this.cartService.remove();
+    this.isInCart = false;
+    this.cartService.remove(this.book);
   }
 }
